@@ -8,6 +8,8 @@ import numpy as np
 '''
 Authors: Travis Oliphant, Ivan Idris, Wes McKinney, Robert Johansson, Pearu Peterson, Marten Henric van Kerkwijik
 https://github.com/numpy/numpy, https://www.numpy.org
+
+Main Font is PIXELBOY https://www.fontspace.com/pixeboy-font-f43730
 '''
 
 #Declaring some variables
@@ -159,7 +161,8 @@ while running:
 
 		arrows = move_objects(arrows, 10)
 		enemies = move_objects(enemies, -1.5)
-		render_objects(arrows + enemies, win)
+		render_objects(arrows, win)
+		render_objects(enemies, win)
 		
 		#Arrow counter for how many you've hit and how many you've shot
 		font = pygame.font.Font('main_font.ttf', 36)
